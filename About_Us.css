@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    position: relative;
+    background-color: white;
+}
+/* Logo */
+h1{
+    position: absolute;
+    font-size: 45px;
+    margin: 20px;
+    /* border: 1px solid red; */
+}
+h5{
+    position: absolute;
+    left: 190px;
+    top: 10px;
+    margin: 20px;
+    /* border: 1px solid rgb(0, 17, 255); */
+}
+.lorem{
+    margin: 100px;
+    position: relative;
+    text-align: justify;
+}

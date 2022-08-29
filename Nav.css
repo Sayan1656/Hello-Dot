@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: fixed;
+    height: 26%;
+    width: 3.5%;
+    background: black;
+    padding: 10px;
+    top:37%;
+    border-radius: 0px 20px 20px 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+.menuContent{
+    color: white;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+}
+.menuName{
+    font-size: 25px;
+    font-weight:500;
+    align-items: center;
+    opacity: 0;
+}
+.menuBtn{
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    transition: all 0.4s ease;
+}
+nav ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    list-style: none;
+    border-radius: 12px;
+    margin: 0px 5px;
+}
+nav ul li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+i{
+    position: relative;
+    padding-left: 10px;
+}
+.NavTitle{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+nav ul li a:hover{
+    color: #000;
+    background-color: white;
+    border-radius: 12px;
+    transition: all 0.7s ease;
+}
+.nav.active{
+    width: 14%;
+    transition: all 0.4s ease;
+}
+.menuBtn.active{
+    left: 80%;
+    transition: all 0.4s ease;
+}
+.menuName.active{
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.NavTitle.active{
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.Tooltip{
+    position: absolute;
+    left: 90%;
+    top:0;
+    color: black;
+    font-weight: 400;
+    font-size: smaller;
+    background: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.nav ul li:hover .Tooltip{
+    opacity: 1;
+    top: 50%;
+    transition: all 0.4s ease;
+}
+.nav ul li:hover .Tooltip.active{
+    opacity: 0;
+    top: 50%;
+    transition: all 0.4s ease;
+}
